@@ -2,9 +2,10 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aelsayegh.github.io/CLINICAL-TRIAL-SYMPHONY",
   "dependencies": {
     "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
+    "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.8",
     "@mui/material": "^6.1.8",
     "@mui/x-data-grid": "^7.22.3",
@@ -22,6 +23,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.2.0",
     "multer": "^1.4.5-lts.1",
     "papaparse": "^5.4.1",
     "path": "^0.12.7",
@@ -39,7 +41,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
